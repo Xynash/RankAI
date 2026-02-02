@@ -1,0 +1,124 @@
+/* =========================
+   AUTH PAGE LAYOUT
+========================= */
+.auth-wrapper {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  padding: 2.5rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+/* Headings */
+.auth-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Subtext */
+.auth-sub {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+/* Form */
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Footer text */
+.auth-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.auth-footer a {
+  color: #a5b4fc;
+  text-decoration: none;
+}
+
+/* ===== CONTACT PAGE STYLING ===== */
+
+.contact-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: radial-gradient(circle at top, #0a0f2c, #050814);
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(20, 24, 55, 0.85);
+  box-shadow: 0 0 40px rgba(98, 102, 255, 0.25);
+  text-align: center;
+  color: #fff;
+}
+
+.contact-container h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.contact-sub {
+  font-size: 14px;
+  color: #b5b8d6;
+  margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 0 2px #6c6cff;
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.contact-info-grid {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-card {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.info-card h4 {
+  margin-bottom: 5px;
+  font-size: 15px;
+}

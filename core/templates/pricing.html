@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pricing | AI SEO</title>
+  <link rel="stylesheet" href="{% static 'css/global.css' %}">
+</head>
+<body>
+
+
+<div class="twinkle-layer"></div>
+
+<header class="navbar">
+  <div class="nav-container">
+
+   
+    <div class="logo"
+      style="
+  font-size: 2.0rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4adeff, #7cffc4);
+   -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+" >RankAI</div>
+
+    <nav class="nav-links">
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'features' %}">Features</a>
+      <a href="{% url 'pricing' %}" class="active">Pricing</a>
+      <a href="{% url 'contact' %}">Contact</a>
+      <a href="{% url 'faqs' %}">FAQs</a>
+      <a href="{% url 'dashboard' %}">Dashboard</a>
+      
+    </nav>
+
+    <div class="nav-actions">
+      <a href="{% url 'login' %}" class="btn-outline">Login</a>
+      <a href="{% url 'register' %}" class="btn-primary">Get Started</a>
+    </div>
+
+  </div>
+</header>
+
+<section class="pricing-section">
+
+  <h1 style="text-align:center; font-size: 40px;">Pricing Our Plans</h1>
+
+  <p style="text-align:center; max-width:700px; margin:20px auto">
+    Simple, transparent pricing designed to scale with your business.
+  </p>
+
+  <div class="pricing-grid">
+
+    <div class="pricing-card">
+      <h3 style="font-size: 30px">Starter</h3>
+      <p class="price">₹0<span>/month</span></p>
+      <ul>
+        <li>Basic SEO Scan</li>
+        <li>SEO Score</li>
+        <li>Limited Reports</li>
+      </ul><br>
+      <a href="{% url 'register' %}" class="btn-outline">Get Started</a>
+    </div>
+
+    <div class="pricing-card featured">
+      <h3 style="font-size: 30px">Pro</h3>
+      <p>₹499 / month</p>
+      <ul>
+        <li>Advanced SEO Analysis</li>
+        <li>AI Recommendations</li>
+        <li>Unlimited Reports</li>
+      </ul><br>
+      <a href="{% url 'register' %}" class="btn-primary">Start Free Trial</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3 style="font-size: 30px">Enterprise</h3>
+      <p>Custom</p>
+      <ul>
+        <li>All Pro Features</li>
+        <li>Team Access</li>
+        <li>Priority Support</li>
+      </ul><br>
+      <a href="{% url 'contact' %}" class="btn-outline">Contact Us</a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer class="footer">
+  © 2026 AI SEO Optimization System
+</footer>
+
+<script src="{% static 'js/navbar.js' %}"></script>
+
+
+
+</body>
+</html>

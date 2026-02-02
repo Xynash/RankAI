@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | AI SEO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'css/global.css' %}">
+  <link rel="stylesheet" href="{% static 'css/auth.css' %}">
+</head>
+<body>
+
+<div class="twinkle-layer"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="logo"
+      style="
+        font-size: 2.0rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #ff6ec4, #7873f5, #4adeff, #7cffc4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      ">
+      RankAI
+    </div>
+
+    <nav class="nav-links">
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'features' %}">Features</a>
+      <a href="{% url 'pricing' %}">Pricing</a>
+      <a href="{% url 'contact' %}">Contact</a>
+      <a href="{% url 'faqs' %}">FAQs</a>
+      <a href="{% url 'dashboard' %}">Dashboard</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="{% url 'login' %}" class="btn-outline">Login</a>
+      <a href="{% url 'register' %}" class="btn-primary active">Get Started</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- REGISTER SECTION -->
+<section class="auth-section">
+
+  <div class="auth-card glow-card">
+
+    <h2>Get Started ✨</h2>
+    <p class="auth-sub">
+      Create your account and unlock AI-driven SEO insights
+    </p>
+
+    <!-- ✅ DJANGO REGISTER FORM -->
+    <form method="POST">
+      {% csrf_token %}
+
+      <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        required
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+      >
+
+      <input
+        type="password"
+        name="password"
+        placeholder="Create Password"
+        required
+      >
+
+      <button type="submit" class="btn-primary large glow-btn">
+        Create Account
+      </button>
+    </form>
+
+    <!-- ✅ ERROR / SUCCESS MESSAGES -->
+    {% if messages %}
+      {% for message in messages %}
+        <p style="margin-top: 12px; color: #ff6b6b;">
+          {{ message }}
+        </p>
+      {% endfor %}
+    {% endif %}
+
+    <p class="auth-footer">
+      Already have an account?
+      <a href="{% url 'login' %}">Login</a>
+    </p>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  © 2026 AI SEO Optimization System
+</footer>
+
+</body>
+</html>
+
+
+
