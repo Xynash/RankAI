@@ -42,18 +42,22 @@ Website Optimization Platform
 
 AI + NLP + Django Portfolio Project
 
-🛠️ Tech Stack
-Category	Technology
-Backend Framework	Django
-Frontend	HTML, CSS, JavaScript
-Database	SQLite
-Machine Learning	Custom ML models
-NLP	NLTK / NLP Utilities
-Web Scraping	Requests / BeautifulSoup
-AI Logic	Rule-based + ML-based Algorithms
-Environment	Python Virtual Environment
+ ## 🛠️ Tech Stack
+ | Category                      | Technology                         |
+| ----------------------------- | ---------------------------------- |
+| Frontend                      | Html,CSS,JavaScript                |
+| Backend Framework             | Django                             |
+| Database                      | Sqlite3                            |
+| Machine Learning              | Custom ML Models,NLP	NLTK /       |
+|                               |  Utilities                         |
+| Web Scraping                  | request/BeautifulSoup              |
+| AI Logic                      |Rule-based + ML-based Algorithms    |
+| Environment                   | Python Virtual Environment         |
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
+```text
 AI-SEO-System/
 │
 ├── manage.py                     # Django project manager
@@ -104,45 +108,57 @@ AI-SEO-System/
 │
 ├── requirements.txt              # Dependencies
 └── README.md                     # Project documentation
+```
+
+---
 
 ✅ Prerequisites
 
 Make sure you have the following installed:
 
-Python 3.9+
-
-pip
-
-Git
+* **Python 3.9 or higher**
+* **pip** (Python package manager)
+* **Git**
 
 Virtual Environment
 
-Check versions:
-
+```bash
 python --version
 pip --version
 git --version
+```
+
+---
 
 ⚙️ Step-by-Step Setup Guide
 1️⃣ Create & Activate Virtual Environment
+
+```bash
 python -m venv .venv
+```
 
 
 Activate:
 
-Windows
+**Windows:**
 
+```bash
 .venv\Scripts\activate
+```
 
+**macOS / Linux:**
 
-macOS / Linux
-
+```bash
 source .venv/bin/activate
+```
+
+---
 
 2️⃣ Install Required Libraries
 
 Create / verify requirements.txt:
 
+```text
 django
 nltk
 numpy
@@ -151,34 +167,44 @@ scikit-learn
 beautifulsoup4
 requests
 lxml
+```
 
 
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
+
+---
 
 3️⃣ Download NLP Resources
+```bash
 python
-
+```
+```python
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
 exit()
+```
+
+---
 
 4️⃣ Django Database Setup
-python manage.py makemigrations
-python manage.py migrate
+* ` python manage.py makemigrations
+python manage.py migrate `
 
 5️⃣ Create Superuser (Optional)
-python manage.py createsuperuser
+* `python manage.py createsuperuser `
 
 ▶️ Running the Application
-python manage.py runserver
+* ` python manage.py runserver `
 
 
 Open browser:
-
+```
 http://127.0.0.1:8000
+```
 
 🧪 Key Features Breakdown
 🔍 SEO Analysis
@@ -215,9 +241,11 @@ Static files not loading	Run collectstatic
 Migration error	Delete migrations & retry
 
 🔐 Git Workflow
+```bash
 git add .
 git commit -m "Your commit message"
 git push origin Branch_Name
+```
 
 
 🚫 Never push directly to main
