@@ -1,4 +1,4 @@
-🚀 AI-POWERED SEO ANALYSIS SYSTEM ⭐
+# 🚀 AI-POWERED SEO ANALYSIS SYSTEM ⭐
 
 A professional AI-Powered SEO System built using Django and Machine Learning algorithms that analyzes websites for SEO health, keyword optimization, semantic relevance, ranking factors, and technical issues.
 
@@ -6,7 +6,7 @@ The system combines ML models, NLP techniques, rule-based SEO algorithms, and we
 
 This README provides step-by-step instructions to set up, run, and understand the project.
 
-# REFERANCE RESEARCH PAPER
+* REFERANCE RESEARCH PAPER
 * BERT:Pre-training of deep bidirectional transformers for language understanding in Proc.NAACL-HLT,2019
 
 📌 Project Overview
