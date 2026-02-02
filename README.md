@@ -264,8 +264,8 @@ Real-time ranking tracking
 
 👩‍💻 Author
 
-Ansh Sharma
-Tanu Pant
+Ansh Sharma ,
+Tanu Pant , 
 Ayushi Singh
 
 ⭐ Acknowledgements
