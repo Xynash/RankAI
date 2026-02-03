@@ -1,4 +1,4 @@
-# 🚀 AI-POWERED SEO ANALYSIS SYSTEM ⭐
+# 🚀 AI-POWERED SEO SYSTEM ⭐
 
 A professional AI-Powered SEO System built using Django and Machine Learning algorithms that analyzes websites for SEO health, keyword optimization, semantic relevance, ranking factors, and technical issues.
 
@@ -264,8 +264,8 @@ Real-time ranking tracking
 
 👩‍💻 Author
 
-Ansh Sharma
-Tanu Pant
+Ansh Sharma ,
+Tanu Pant , 
 Ayushi Singh
 
 ⭐ Acknowledgements
